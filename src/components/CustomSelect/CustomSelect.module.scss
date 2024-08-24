@@ -1,0 +1,57 @@
+.select {
+    position: relative;
+    width: 200px;
+
+    &__control {
+        border: 1px solid #ccc;
+        padding: 8px;
+        cursor: pointer;
+    }
+
+    &__placeholder {
+        color: #999;
+    }
+
+    &__selected_option {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 2px 0;
+    }
+
+    &__dropdown {
+        position: absolute;
+        width: 100%;
+        border: 1px solid #ccc;
+        background: #fff;
+        z-index: 10;
+
+        &_visible {
+            display: unset;
+        }
+
+        &_hidden {
+            display: none;
+        }
+    }
+
+    &__search {
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+    }
+
+    &__dropdown_option {
+        padding: 8px;
+        cursor: pointer;
+    }
+
+    &__dropdown_option:hover {
+        background: #f0f0f0;
+    }
+
+    &__no_options {
+        padding: 8px;
+        color: #999;
+    }
+}
